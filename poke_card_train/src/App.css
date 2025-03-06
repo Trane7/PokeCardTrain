@@ -36,9 +36,11 @@ main {
 }
 
 .card-list {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns, equally spaced */
+  gap: 1em; /* Space between cards */
+  justify-items: center;
+  margin: 0 auto;
 }
 
 .card {
