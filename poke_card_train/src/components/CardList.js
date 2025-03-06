@@ -3,23 +3,23 @@ import Card from './Card';
 
 const CardList = () => {
   const cards = [
-    { 
-      name: "Pikachu", 
-      description: "Electric type Pokémon", 
-      price: 5.99, 
-      image: "/images/pikachu.png" 
+    {
+      name: "Mew",
+      description: "Psychic type Pokémon",
+      price: 5.99,
+      image: "/assets/mew.jpg"
     },
-    { 
-      name: "Charizard", 
-      description: "Fire type Pokémon", 
-      price: 15.99, 
-      image: "/images/charizard.png" 
+    {
+      name: "Charizard",
+      description: "Fire type Pokémon",
+      price: 15.99,
+      image: "/images/charizard.png"
     },
-    { 
-      name: "Bulbasaur", 
-      description: "Grass type Pokémon", 
-      price: 8.99, 
-      image: "/images/bulbasaur.png" 
+    {
+      name: "Bulbasaur",
+      description: "Grass type Pokémon",
+      price: 8.99,
+      image: "/images/bulbasaur.png"
     },
   ];
 
