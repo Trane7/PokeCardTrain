@@ -1,8 +1,35 @@
-export const Button = ({ children, className, ...props }) => (
-    <button
-      className={`px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 ${className}`}
-      {...props}
-    >
-      {children}
-    </button>
+import React from 'react';
+import Card from './Card.js';
+
+const CardList = () => {
+  const cards = [
+    { 
+      name: "Pikachu", 
+      description: "Electric type Pokémon", 
+      price: 5.99, 
+      image: "/images/pikachu.png" 
+    },
+    { 
+      name: "Charizard", 
+      description: "Fire type Pokémon", 
+      price: 15.99, 
+      image: "/images/charizard.png" 
+    },
+    { 
+      name: "Bulbasaur", 
+      description: "Grass type Pokémon", 
+      price: 8.99, 
+      image: "/images/bulbasaur.png" 
+    },
+  ];
+
+  return (
+    <div className="card-list">
+      {cards.map(card => (
+        <Card key={card.name} card={card} />
+      ))}
+    </div>
   );
+}
+
+export default CardList;
