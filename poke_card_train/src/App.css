@@ -54,6 +54,44 @@ main {
   height: 150px;
 }
 
+.checkout {
+  padding: 2em;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.checkout-summary ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.checkout-summary li {
+  padding: 5px 0;
+}
+
+.checkout-form label {
+  display: block;
+  margin: 1em 0 0.5em;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.checkout-form button {
+  padding: 0.5em 2em;
+  background-color: #ffcc00;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout-form button:hover {
+  background-color: #ffb700;
+}
+
+
 footer {
   background-color: #333;
   color: white;

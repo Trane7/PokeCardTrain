@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Card = ({ card }) => {
+const Card = ({ card, addToCart }) => {
   return (
     <div className="card">
       <img src={card.image} alt={card.name} />
       <h3>{card.name}</h3>
       <p>{card.description}</p>
       <p>Price: ${card.price}</p>
-      <button>Add to Cart</button>
+      <button onClick={() => addToCart(card)}>Add to Cart</button>
     </div>
   );
 }
