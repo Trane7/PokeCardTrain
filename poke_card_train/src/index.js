@@ -1,13 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Store from "./App";  // Assuming your main App component is in src/App.js
-import "./index.css";  // If you have any global styles
-
-// Make sure you have all your stylesheets, fonts, or other required assets imported here
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Store />
+    <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
+
+reportWebVitals();
