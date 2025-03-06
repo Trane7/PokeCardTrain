@@ -1,7 +1,9 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';  // Correct imports
 import './App.css';
 import Header from './components/Header';
-import CardList from './components/CardList';
+import Home from './components/Home';  // Import Home page
+import Cart from './components/Cart';  // Import Cart page
 import Footer from './components/Footer';
 
 function App() {
@@ -9,8 +11,10 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <h1>Welcome to the Pokémon Card Shop</h1>
-        <CardList />
+        <Routes>  {/* Use Routes instead of Switch */}
+          <Route path="/" element={<Home />} />  {/* Use element prop */}
+          <Route path="/cart" element={<Cart />} />  {/* Use element prop */}
+        </Routes>
       </main>
       <Footer />
     </div>

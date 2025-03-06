@@ -19,16 +19,19 @@ header h2 {
 header nav ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 
 header nav ul li {
   display: inline;
-  margin: 0 1em;
 }
 
 header nav ul li a {
   text-decoration: none;
   color: #333;
+  font-weight: bold;
 }
 
 main {
