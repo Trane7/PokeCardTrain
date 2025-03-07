@@ -104,7 +104,7 @@ const CardList = () => {
 
   return (
     <div>
-      <h3>Shop Pokémon Cards</h3>
+      <h2>Shop Pokémon Products</h2>
       <div className="card-list">
         {cards.map(card => (
           <Card key={card.name} card={card} addToCart={addToCart} />

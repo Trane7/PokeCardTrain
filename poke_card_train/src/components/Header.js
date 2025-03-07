@@ -7,11 +7,9 @@ const Header = () => {
       <img src="./images/pokeball.png" alt="Pokémon Card Shop Logo" className="logo" />
       <h2>Poké Card Train</h2>
       <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>    {/* Home Page Link */}
-          <li><Link to="/cart">Cart</Link></li>  {/* Cart Page Link */}
-          <li><a href="#">Contact</a></li>
-        </ul>
+        <Link to="/">Home</Link>    {/* Home Page Link */}
+        <Link to="/cart">Cart</Link> {/* Cart Page Link */}
+        <a href="#">Contact</a>
       </nav>
     </header>
   );

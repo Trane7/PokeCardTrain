@@ -1,104 +1,55 @@
-.App {
-  font-family: Arial, sans-serif;
+/* Prevent horizontal overflow across the page */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Hide any horizontal overflow */
+  width: 100%; /* Ensure full width is used without exceeding the viewport */
   text-align: center;
 }
 
+/* Header */
 header {
   background-color: #ffcc00;
   padding: 1em;
+  width: 100%; /* Ensure header stays within the width of the screen */
+  box-sizing: border-box;
 }
 
-header img {
-  width: 100px;
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+  width: 100%; /* Ensure footer stays within the width of the screen */
+  box-sizing: border-box;
 }
 
-header h2 {
-  margin: 0;
-}
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-}
-
-header nav ul li {
-  display: inline;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-main {
-  padding: 2em;
-}
-
+/* Ensure the grid and cards don't exceed screen width */
 .card-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 columns, equally spaced */
-  gap: 1em; /* Space between cards */
+  gap: 1em;
   justify-items: center;
   margin: 0 auto;
+  padding: 0 10px; /* Add padding to prevent items from being too close to the edge */
 }
 
 .card {
   border: 1px solid #ddd;
   padding: 1em;
   text-align: center;
+  width: 100%; /* Ensure card doesn't overflow */
+  box-sizing: border-box;
 }
 
-.card img {
-  width: 150px;
-  height: 150px;
-}
-
+/* Checkout Form and Content */
 .checkout {
   padding: 2em;
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
-}
-
-.checkout-summary ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.checkout-summary li {
-  padding: 5px 0;
-}
-
-.checkout-form label {
-  display: block;
-  margin: 1em 0 0.5em;
-}
-
-.checkout-form input {
   width: 100%;
-  padding: 0.5em;
-  margin-bottom: 1em;
-}
-
-.checkout-form button {
-  padding: 0.5em 2em;
-  background-color: #ffcc00;
-  border: none;
-  cursor: pointer;
-}
-
-.checkout-form button:hover {
-  background-color: #ffb700;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  padding: 1em;
-  margin-top: 2em;
+  box-sizing: border-box;
 }
 
 /* Custom Scrollbar for Webkit Browsers (Chrome, Edge, Safari) */
@@ -107,18 +58,18 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e1e1e; /* Dark background */
+  background: #1e1e1e;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333; /* Dark gray scrollbar */
+  background: #333;
   border-radius: 10px;
-  border: 2px solid #1e1e1e; /* Blends with track for a smoother look */
+  border: 2px solid #1e1e1e;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Lighter on hover for visibility */
+  background: #555;
 }
 
 /* Responsive Layout for Smaller Screens */
@@ -190,7 +141,6 @@ footer {
     grid-template-columns: 1fr; /* 1 column */
   }
 
-  /* Adjust font sizes for smaller screens */
   header h2 {
     font-size: 18px;
   }
