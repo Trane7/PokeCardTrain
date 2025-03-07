@@ -94,14 +94,12 @@ main {
   background-color: #ffb700;
 }
 
-
 footer {
   background-color: #333;
   color: white;
   padding: 1em;
   margin-top: 2em;
 }
-
 
 /* Custom Scrollbar for Webkit Browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
@@ -123,3 +121,89 @@ footer {
   background: #555; /* Lighter on hover for visibility */
 }
 
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+  /* Header: Stack logo and navigation vertically */
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* Product Cards: Adjust grid layout */
+  .card-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    gap: 1em;
+  }
+
+  .card {
+    width: 90%; /* Make the cards more responsive */
+  }
+
+  .card img {
+    width: 100%; /* Ensure images scale properly */
+    height: auto;
+  }
+
+  /* Checkout Page: Adjust form input and buttons */
+  .checkout {
+    padding: 1em;
+    width: 100%;
+  }
+
+  .checkout-form button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .checkout-form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .checkout-summary li {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For smaller screens (phones in portrait mode) */
+  .card-list {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+
+  /* Adjust font sizes for smaller screens */
+  header h2 {
+    font-size: 18px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .checkout-form label {
+    font-size: 14px;
+  }
+
+  .checkout-form input, .checkout-form button {
+    font-size: 14px;
+  }
+}
