@@ -5,7 +5,6 @@ const Header = () => {
   return (
     <header>
       <img src="./images/pokeball.png" alt="Pokémon Card Shop Logo" className="logo" />
-      <h2>Poké Card Train</h2>
       <nav>
         <Link to="/">Home</Link>    {/* Home Page Link */}
         <Link to="/cart">Cart</Link> {/* Cart Page Link */}

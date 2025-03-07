@@ -1,15 +1,10 @@
-/* Prevent horizontal overflow across the page */
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Hide any horizontal overflow */
-  width: 100%; /* Ensure full width is used without exceeding the viewport */
+* {
   text-align: center;
 }
 
 /* Header */
 header {
-  background-color: #ffcc00;
+  /* background-color: #ffcc00; */
   padding: 1em;
   width: 100%; /* Ensure header stays within the width of the screen */
   box-sizing: border-box;
@@ -32,8 +27,8 @@ h1 {
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #ddd;
+  color: #333;
   padding: 1em;
   margin-top: 2em;
   width: 100%; /* Ensure footer stays within the width of the screen */
@@ -69,22 +64,24 @@ footer {
 
 /* Custom Scrollbar for Webkit Browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e1e1e;
+  background: transparent;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
   border-radius: 10px;
-  border: 2px solid #1e1e1e;
+  /* border: 2px solid #313131; */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgba(0, 0, 0, 0.6); /* Darker, more visible thumb on hover */
+  border-color: transparent; /* Change border color on hover */
+  width: 12px; /* Slightly increase the width of the thumb */
 }
 
 /* Responsive Layout for Smaller Screens */

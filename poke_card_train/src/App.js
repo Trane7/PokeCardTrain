@@ -1,11 +1,11 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';  // Correct imports
-import './App.css';
+import { BroweserRouter as Router, Route, Routes } from 'react-router-dom';  // Correct imports
 import Header from './components/Header';
 import Home from './components/Home';  // Import Home page
 import Cart from './components/Cart';  // Import Cart page
 import Checkout from './components/Checkout';  // Import Checkout page
 import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
