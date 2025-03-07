@@ -13,6 +13,21 @@ header {
   padding: 1em;
   width: 100%; /* Ensure header stays within the width of the screen */
   box-sizing: border-box;
+  color: black;
+}
+
+/* Home page header text and styles */
+h1 {
+  color: rgb(83, 83, 83);
+}
+
+.text-with-border {
+  display: inline-block; /* Makes the text container behave like an inline element */
+  padding: 5px 10px; /* Padding around the text */
+  border: 2px solid #ff0000; /* Adds a solid border with color */
+  border-radius: 5px; /* Optional: Rounds the corners of the border */
+  font-weight: bold; /* Optional: Makes the text bold */
+  background-color: #c7c7c7;
 }
 
 /* Footer */
