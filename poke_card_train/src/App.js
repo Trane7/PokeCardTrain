@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';  // Import Home page
 import Cart from './components/Cart';  // Import Cart page
+import Checkout from './components/Checkout';  // Import Checkout page
 import Footer from './components/Footer';
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
       <Header />
       <main>
         <Routes>  {/* Use Routes instead of Switch */}
-          <Route path="/" element={<Home />} />  {/* Use element prop */}
-          <Route path="/cart" element={<Cart />} />  {/* Use element prop */}
+          <Route path="/" element={<Home />} />  {/* Home Page Route */}
+          <Route path="/cart" element={<Cart />} />  {/* Cart Page Route */}
+          <Route path="/checkout" element={<Checkout />} />  {/* Checkout Page Route */}
         </Routes>
       </main>
       <Footer />

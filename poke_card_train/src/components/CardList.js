@@ -7,22 +7,94 @@ const CardList = () => {
 
   const cards = [
     { 
-      name: "Pikachu", 
-      description: "Electric type Pokémon", 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
       price: 5.99, 
-      image: "/images/pikachu.png" 
+      image: "./images/mew.jpg" 
     },
     { 
-      name: "Charizard", 
-      description: "Fire type Pokémon", 
-      price: 15.99, 
-      image: "/images/charizard.png" 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
     },
     { 
-      name: "Bulbasaur", 
-      description: "Grass type Pokémon", 
-      price: 8.99, 
-      image: "/images/bulbasaur.png" 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
+    },
+    { 
+      name: "Mew", 
+      description: "Psychic type Pokémon", 
+      price: 5.99, 
+      image: "./images/mew.jpg" 
     },
   ];
 

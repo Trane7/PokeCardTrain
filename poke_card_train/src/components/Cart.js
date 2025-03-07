@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import Checkout from './Checkout';
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link to navigate
+import Checkout from './Checkout';  // Import Checkout component
 
 const Cart = () => {
-  const [cart, setCart] = useState([
+  const [cart, setCart] = React.useState([
     { 
       name: "Pikachu", 
       description: "Electric type Pokémon", 
@@ -21,7 +22,12 @@ const Cart = () => {
     <div>
       <h1>Your Shopping Cart</h1>
       {cart.length > 0 ? (
-        <Checkout cart={cart} />
+        <>
+          <Checkout cart={cart} />
+          <Link to="/checkout">
+            <button>Proceed to Checkout</button> {/* Button to navigate to Checkout */}
+          </Link>
+        </>
       ) : (
         <p>Your cart is empty!</p>
       )}

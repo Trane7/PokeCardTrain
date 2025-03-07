@@ -1,73 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Checkout = ({ cart }) => {
-  const [form, setForm] = useState({
-    name: '',
-    address: '',
-    email: '',
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Checkout Complete!');
-    // Ideally, you would send this information to a server or process the payment here.
-    setForm({ name: '', address: '', email: '' });
-  };
-
-  const totalAmount = cart.reduce((total, card) => total + card.price, 0).toFixed(2);
+  // Calculate the total price
+  const totalPrice = cart.reduce((total, item) => total + item.price, 0);
 
   return (
-    <div className="checkout">
-      <h3>Checkout</h3>
-      <div className="checkout-summary">
-        <h4>Order Summary</h4>
-        <ul>
-          {cart.map((card, index) => (
-            <li key={index}>{card.name} - ${card.price}</li>
-          ))}
-        </ul>
-        <h5>Total: ${totalAmount}</h5>
+    <div>
+      <h1>Checkout</h1>
+      <h2>Your Order</h2>
+      <ul>
+        {cart.map((item, index) => (
+          <li key={index}>
+            <img src={item.image} alt={item.name} width="100" />
+            <div>
+              <h3>{item.name}</h3>
+              <p>{item.description}</p>
+              <p>Price: ${item.price}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+      <div>
+        <h3>Total: ${totalPrice.toFixed(2)}</h3>
       </div>
-
-      <form onSubmit={handleSubmit} className="checkout-form">
-        <h4>Billing Information</h4>
-        <label>
-          Name:
-          <input
-            type="text"
-            name="name"
-            value={form.name}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <label>
-          Address:
-          <input
-            type="text"
-            name="address"
-            value={form.address}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <button type="submit">Submit Order</button>
-      </form>
+      <button>Proceed to Payment</button>
     </div>
   );
 };
