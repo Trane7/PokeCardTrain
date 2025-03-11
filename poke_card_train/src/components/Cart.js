@@ -10,12 +10,6 @@ const Cart = () => {
       price: 5.99, 
       image: "/images/pikachu.png" 
     },
-    { 
-      name: "Charizard", 
-      description: "Fire type Pokémon", 
-      price: 15.99, 
-      image: "/images/charizard.png" 
-    },
   ]);  // Example cart data
 
   return (
